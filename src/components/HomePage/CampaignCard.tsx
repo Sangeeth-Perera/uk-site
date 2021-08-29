@@ -43,8 +43,8 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "100%"
     },
     media: {
-      height: 0,
-      paddingTop: '56.25%', // 16:9
+      height: '200px',
+      width:'100%'
     },
     expand: {
       transform: 'rotate(0deg)',
@@ -117,22 +117,22 @@ export default function CampaignCard(props: any) {
   return (
     <Paper elevation ={4} >
     <Card className={classes.root}>
-      <CardMedia
+      <img
         className={classes.media}
-        image={API + blog?.coverImage?.url}
+        src='https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwbW9kZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
         title="Paella dish"
       />
       <CardContent className={classes.content}>
         <Typography align="center" variant="h5" component="p">
           {blog.campaignName}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        {/* <Typography variant="body2" color="textSecondary" component="p">
           {blog.description && blog.description.substring(0, 60)}
-        </Typography>
+        </Typography> */}
         <Grid container>
           <Grid item lg={12} sm={12}>
             <Typography style={{ fontSize: "20px", padding: "10px 5px 5px 5px" }} variant="body2" align="center" component="p">
-              Rs. {blog.targetAmount}
+            $. {blog.targetAmount}
             </Typography>
             <BorderLinearProgress variant="determinate" value={parseFloat(String((blog.collectedAmount / blog.targetAmount)*100))} />
           </Grid>
@@ -141,7 +141,7 @@ export default function CampaignCard(props: any) {
       <CardActions disableSpacing>
         <Grid container spacing={3}>
           <Grid item lg={12}style={{ backgroundColor: '#fc030f', color: "#FFF" }}>
-            <Button fullWidth style={{ backgroundColor: '#fc030f', color: "#FFF" }} onClick={() => router.push('/donation?id='+blog.id)}>Donate</Button>
+            <Button fullWidth style={{ backgroundColor: '#fc030f', color: "#FFF" }} onClick={() => router.push('/#?id='+blog.id)}>Add to Cart</Button>
           </Grid>
         </Grid>
       </CardActions>

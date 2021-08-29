@@ -7,36 +7,37 @@ import { Grid } from "@material-ui/core";
 import { mockData } from "../../components/campaigns/data";
 import { API } from "../../../config";
 import CampaignCard from "./CampaignCard";
+import { shopItems } from "../../dto/data";
 
 export default function OurCampaigns() {
   const [campaignList, setCampaignList] = useState([]);
   const [loading, setLoading] = useState(false);
   const [errorText, setErrorText] = useState('');
 
-  useEffect(() => {
-    getCampaigns();
-  }, [])
+  // useEffect(() => {
+  //   getCampaigns();
+  // }, [])
 
-  const getCampaigns = async () => {
-    try {
-      setLoading(true);
-      const response = await axios.get(`${API}/campaigns`)
-      setCampaignList(response.data);
-      setLoading(false);
-    } catch (error) {
-      setErrorText("Oops..We are sorry. Something went wrong... ");
-      setLoading(false);
-    }
-  }
+  // const getCampaigns = async () => {
+  //   try {
+  //     setLoading(true);
+  //     const response = await axios.get(`${API}/campaigns`)
+  //     setCampaignList(response.data);
+  //     setLoading(false);
+  //   } catch (error) {
+  //     setErrorText("Oops..We are sorry. Something went wrong... ");
+  //     setLoading(false);
+  //   }
+  // }
   return (
     <Box marginY="50px">
-      <Heading marginY="25px" ><Center>Our Campaigns</Center></Heading>
+      <Heading marginY="25px" ><Center>Latest Arrivals</Center></Heading>
       {loading ? (<Center><Loading /></Center>) : (
         <React.Fragment>
           {!errorText ? (
             <Grid container spacing={1}>
-                {campaignList.slice(0.3).map(((campaign: any) => (
-                <Grid item xs={12} lg={4} md={6}>
+                {shopItems.slice(0.4).map(((campaign: any) => (
+                <Grid item xs={12} lg={3} md={6}>
                   <Center>
                     <CampaignCard blog={campaign} />
                   </Center>

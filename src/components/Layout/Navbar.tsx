@@ -23,7 +23,7 @@ const Navbar: React.FC<Props> = (Props) => {
       <Flex align="center" mr={5} justify="true">
         <Flex justify="true">
           <Box p="1" alignSelf="center" paddingLeft="50%">
-            <Heading size="md" ><img src="./Assets/ccc-logo.jpg" /></Heading>
+            <Heading size="md" ><img src="./Assets/uk-logo.png" /></Heading>
           </Box>
           <Spacer />
         </Flex>

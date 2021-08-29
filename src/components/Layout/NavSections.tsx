@@ -79,16 +79,16 @@ const Sections: React.FC<Props> = () => {
 
 
     return (
-        <Box verticalAlign="baseline" bgColor="#000">
+        <Box verticalAlign="baseline" >
 
 
-            <SimpleGrid columns={3} bgColor="#0000" color="#ffff" paddingBottom="20px" sx={{
+            <SimpleGrid columns={3} paddingBottom="20px" sx={{
                 "@media only screen and (max-width: 1000px)": {
                     display: "none",
                 },
             }}>
                 <Box marginX={1} as="button" onClick={() => router.push('/')} py="3">
-                    <Center><Image maxW="400px" position="static" h="60px" src="../../Assets/ccc-logo.jpg" /></Center>
+                    <Center><Image maxW="400px" position="static" h="60px" src="../../Assets/uk-logo.png" /></Center>
                 </Box>
 
                 <Box verticalAlign="baseline">
@@ -101,17 +101,17 @@ const Sections: React.FC<Props> = () => {
                             </Box>
                             <Box _hover={{
                                 color: "teal.500",
-                            }} as="button" onClick={() => router.push('/campaigns')} py="3">
-                                <Center><Text >Campaigns</Text></Center>
+                            }} as="button" onClick={() => router.push('/#')} py="3">
+                                <Center><Text >Women</Text></Center>
                             </Box>
                             <Box _hover={{
                                 color: "teal.500",
-                            }} as="button" onClick={() => router.push('/events')} py="3">
-                                <Center><Text >Events</Text></Center>
+                            }} as="button" onClick={() => router.push('/#')} py="3">
+                                <Center><Text >Men</Text></Center>
                             </Box>
                             <Box _hover={{
                                 color: "teal.500",
-                            }} as="button" w="100px" onClick={() => router.push('/about-us')}py="3">
+                            }} as="button" w="100px" onClick={() => router.push('/#')}py="3">
                                 <Center><Text >About us</Text></Center>
                                 {/* {aboutUs} */}
                             </Box>
@@ -122,7 +122,7 @@ const Sections: React.FC<Props> = () => {
                             </Box> */}
                             <Box as="button" _hover={{
                                 color: "teal.500",
-                            }} onClick={() => router.push('/gallery')} py="3">
+                            }} onClick={() => router.push('/#')} py="3">
                                 <Center><Text >Gallery</Text></Center>
                             </Box>
                             <Box as="button" _hover={{
@@ -133,7 +133,7 @@ const Sections: React.FC<Props> = () => {
                                     : 'Login'}</Text></Center>
                             </Box>
                             {/* <Box as="button" marginLeft={20}><Center><SearchOutlined /></Center></Box> */}
-                            <Box as="button" onClick={() => router.push('/donation')}><Button style={{ width: 200, borderRadius: 60, backgroundColor: '#ba2918', color: '#FFF' }}>Donate Now</Button></Box>
+                            <Box as="button" onClick={() => router.push('/#')}><Button style={{ width: 200, borderRadius: 60, backgroundColor: '#ba2918', color: '#FFF' }}>Shop Now</Button></Box>
                         </SimpleGrid>
                     </Center>
                 </Box>
@@ -147,8 +147,8 @@ const Sections: React.FC<Props> = () => {
             </SimpleGrid>
             {minMatches ? (
                 <Grid container>
-                    <Grid item xs={11}><Box as="button" onClick={() => router.push('/')} alignSelf="center" width="auto"><Center><Image alignSelf="center" w="100%" h="60px" src="../../Assets/ccc-logo.jpg" /></Center></Box></Grid>
-                    <Grid item xs={1}><Box float="right" right={0} onClick={() => handleMobileNavOpen()} marginRight={0} minW="50px" maxW="100px" as="button" alignContent="center" color="#FFFF" ><MenuIcon fontSize="large" /></Box></Grid>
+                    <Grid item xs={11} style = {{padding:"0px 0px 0px 200px"}}><Box as="button" onClick={() => router.push('/')} alignSelf="center" width="auto"><Center><Image alignSelf="center" w="auto" marginX = "40%" h="60px" src="../../Assets/uk-logo.png" /></Center></Box></Grid>
+                    <Grid item xs={1}><Box float="right" right={0} onClick={() => handleMobileNavOpen()} marginRight={0} minW="50px" maxW="100px" as="button" alignContent="center" color="#000" ><MenuIcon fontSize="large" /></Box></Grid>
                 </Grid>) : null}
             <SimpleGrid alignSelf="center" columns={1} paddingBottom="10px" sx={{
                 "@media only screen and (min-width: 1000px)": {

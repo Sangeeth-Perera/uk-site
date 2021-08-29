@@ -43,22 +43,22 @@ function MobileNavigation(props: any) {
                   background: "white",
                   color: "teal.500",
                 }} as="button" onClick={() => { onClose(); router.push('/campaigns') }} py="3">
-                  <Center><Text  >Campaigns</Text></Center>
+                  <Center><Text  >Women</Text></Center>
                 </Box>
               </Grid>
               <Grid item sm={12}>
                 <Box _hover={{
                   background: "white",
                   color: "teal.500",
-                }} as="button" onClick={() => { onClose(); router.push('/events') }} py="3">
-                  <Center><Text >Events</Text></Center>
+                }} as="button" onClick={() => { onClose(); router.push('/#') }} py="3">
+                  <Center><Text >Men</Text></Center>
                 </Box>
               </Grid>
               <Grid item sm={12}>
                 <Box _hover={{
                   background: "white",
                   color: "teal.500",
-                }} as="button" onClick={() => { onClose(); router.push('/about-us') }} py="3">
+                }} as="button" onClick={() => { onClose(); router.push('/#') }} py="3">
                   <Center><Text >About us</Text></Center>
                 </Box>
               </Grid>
@@ -74,7 +74,7 @@ function MobileNavigation(props: any) {
                 <Box as="button" _hover={{
                   background: "white",
                   color: "teal.500",
-                }} onClick={() => { onClose(); router.push('/gallery') }} py="3">
+                }} onClick={() => { onClose(); router.push('/#') }} py="3">
                   <Center><Text >Gallery</Text></Center>
                 </Box>
               </Grid>

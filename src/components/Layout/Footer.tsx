@@ -23,20 +23,20 @@ const Footer: React.FC<Props> = () => {
 
     <Grid container style={{ backgroundColor:"#000", bottom: 0, marginBottom: 0, color : '#FFF' }}>
       <Grid item xs={12} lg={4}>
-        <Image paddingY="20px"  paddingX="40px" maxW="200px" position="static" h="150px" src="../../Assets/ccc-logo.jpg" />
+        <Image paddingY="20px"  paddingX="40px" maxW="200px" position="static" h="150px" src="../../Assets/uk-logo.png" />
       </Grid>
       <Grid item xs={12} lg={4}>
         <Text paddingY="10px" fontSize="24px" color="#d61904"><b>LOCATION INFO</b></Text>
-        <Text><LocationOnIcon /> CCC Foundation Inc. (Sri Lanka)<br />
-          C/O Classic Travel (Pvt) Ltd<br />
-          379/4, Galle Road ,<br />  Colombo 03</Text>
+        <Text><LocationOnIcon /> UK Fashions<br />
+          Mancherster City<br />
+          London 03</Text>
         <Text><Link href="#"></Link></Text>
       </Grid>
       <Grid item xs={12} lg={4}>
         <Text paddingY="10px" fontSize="24px" color="#d61904"><b>HELP & CONTACT</b></Text>
-        <Text><CallIcon /> +94 11 2633237
+        <Text><CallIcon /> +XX XXXXXXXXX
         </Text>
-        <Text><Link href="#"><MailOutlineIcon /> info@1333.lk</Link></Text>
+        <Text><Link href="#"><MailOutlineIcon /> xxxx@fashion.uk</Link></Text>
       </Grid>
     </Grid>
   );

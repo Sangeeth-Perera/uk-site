@@ -21,7 +21,7 @@ export default function Home() {
     <div>
       <Head>
         <meta name="google-site-verification" content="LoTQgawy0MW6IhNfgQHsJWOmVfaKykMdfUOOC2LD970" />
-        <title>CCC</title>
+        <title>UK-Site</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         {/* <meta property="og:image" content="url(Assets/coverLatest.jpg)"/> */}
       </Head>
@@ -30,8 +30,8 @@ export default function Home() {
         <Articles />
         <OurCampaigns />
         
-        <AboutUs />
-        <Events/>
+        {/* <AboutUs /> */}
+        {/* <Events/> */}
         <Partners/>
         {/* <CoreValues/> */}
         {/* <Newsletter /> */}

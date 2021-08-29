@@ -58,7 +58,7 @@ export default function OurCampaigns() {
     }
     return (
         <Box marginY="100px">
-            <Heading marginY="25px" ><Center>OUR MOST TRUSTED SUPPORTIVE PARTNERS</Center></Heading>
+            <Heading marginY="25px" ><Center>OUR BRANDS</Center></Heading>
             {loading ? (<Center><Loading /></Center>) : (
                 <React.Fragment>
                     {!errorText ? (

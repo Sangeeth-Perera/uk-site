@@ -11,7 +11,7 @@ const Copyrights: React.FC<Props> = () => {
     <Box color="#fff" bgColor="#000" py="3" paddingBottom="20px" alignItems="center"> 
       <Grid container>
         <Grid item lg={6}>
-          <Typography align='center'>Copyright © Tecxaltd - All rights reserved.</Typography>
+          <Typography align='center'>Copyright © Delmix - All rights reserved.</Typography>
         </Grid>
         <Grid item lg={2}></Grid>
 

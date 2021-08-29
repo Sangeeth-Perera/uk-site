@@ -31,13 +31,13 @@ const Articles: React.FC<Props> = () => {
 
   const itemsArray = [
     <Box display="flex" gridColumnGap="20px">
-      <Image height="100%" width="100%" display="flex" src="./Assets/cover1.png" />
+      <Image height="500px" width="100%" display="flex" src="./Assets/uk-cover.jpeg" />
     </Box>,
     <Box display="flex" gridColumnGap="20px">
-      <Image height="100%" width="100%" display="flex" src="./Assets/cover2.png" />
+      <Image height="500px" width="100%" display="flex" src="./Assets/uk-cover2.jpeg" />
     </Box>,
     <Box display="flex" gridColumnGap="20px">
-      <Image height="100%" width="100%" display="flex" src="./Assets/2.png" />
+      <Image height="500px" width="100%" display="flex" src="./Assets/uk-cover3.jpeg" />
     </Box>
 
   ];
