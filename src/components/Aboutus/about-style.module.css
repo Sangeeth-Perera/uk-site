@@ -1,0 +1,19 @@
+.cardCorners {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.tabBar {
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.tabHeaders {
+    color: #DD0B0B !important;
+}
+
+.tabHeading {
+    font-size: 40px !important;
+    font-weight: 450 !important;
+}

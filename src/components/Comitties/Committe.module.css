@@ -1,0 +1,14 @@
+.sectionHeaders {
+    font-size: 20px !important;
+}
+
+.categoryNames {
+    font-size: 14px !important;
+    text-align: center;
+    font-weight: bold !important;
+}
+
+.loadMoreButton {
+    width: auto !important;
+    height: auto !important;
+}
